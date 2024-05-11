@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .work-container {
+            width: 100%;
+            margin: auto;
+            background-color: #f1fdf0;
+        }
+
+        .sub-title {
+            text-align: center;
+            font-size: 20px;
+            color: green;
+        }
+
+        .work-title {
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .work-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding-bottom: 30px;
+            position: relative;
+            justify-content: space-between;
+        }
+
+        .work-col {
+            width: 15%;
+            text-align: center;
+            box-shadow: 0px 0px 0px 0px rgba(210, 206, 206, 0.8);
+            border-radius: 20px;
+            background-color: #ffff;
+            padding: 10px;
+            margin-bottom: 70px;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .work-col2 {
+            width: 15%;
+            text-align: center;
+            box-shadow: 0px 0px 0px 0px rgba(189, 184, 184, 0.8);
+            border-radius: 20px;
+            background-color: #ffff;
+            margin-top: 86px;
+            padding: 10px;
+            position: relative;
+        }
+
+        .work-img {
+            width: 90%;
+        }
+
+        .work-img img {
+            max-width: 100%;
+        }
+
+        .work-dots img {
+            position: absolute;
+            width: 80%;
+            margin-left: 170px;
+        }
+
+        .work-dots img {
+            max-width: 100%;
+        }
+
+        .pulsedots {
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: -40px;
+            left: calc(38% - 8px);
+            border-radius: 50%;
+            background-color: #6bde5e;
+            animation: ripple 2s ease-in-out infinite, ripple2 2s ease-in-out infinite;
+        }
+
+        @keyframes ripple {
+            0% {
+                box-shadow: 0 0 0 .5rem rgba(45, 204, 34, 0.2);
+                /* 0 0 0 1.0rem rgba(45, 204, 34, 0.2); */
+            }
+
+            100% {
+                box-shadow: 0 0 0 1.0rem rgba(45, 204, 34, 0.2);
+                /* 0 0 0 2rem rgba(45, 204, 34, 0.2); */
+            }
+        }
+
+        @keyframes ripple2 {
+            0% {
+                box-shadow: 0 0 0 .5rem rgba(45, 204, 34, 0.2);
+                /* 0 0 0 1.0rem rgba(45, 204, 34, 0.2); */
+            }
+
+            100% {
+                box-shadow: 0 0 0 1.0rem rgba(45, 204, 34, 0.2);
+                /* 0 0 0 2rem rgba(45, 204, 34, 0.2); */
+            }
+        }
+
+        @media(max-width: 320px) {
+            .work-container {
+                padding: 0 10px;
+            }
+
+            .work-row {
+                justify-content: center;
+            }
+
+            .work-col,
+            .work-col2 {
+                width: 100% !important;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+
+            .work-dots img {
+                margin-left: 50%;
+                transform: translateX(-50%);
+                display: none;
+            }
+
+            .pulsedots {
+                top: -36px;
+                left: calc(50% - 8px);
+            }
+        }
+
+        @media(max-width: 760px) {
+            .work-container {
+                padding: 0 20px;
+            }
+
+            .work-row {
+                justify-content: center;
+            }
+
+            .work-col,
+            .work-col2 {
+                width: 45%;
+                margin-bottom: 30px;
+                margin-top: 30px;
+            }
+
+            .work-dots img {
+                margin-left: 50%;
+                transform: translateX(-50%);
+                display: none;
+            }
+
+            .pulsedots {
+                top: -48px;
+                left: calc(50% - 8px);
+            }
+        }
+
+        @media(max-width: 1020px) {
+            .work-container {
+                padding: 0 30px;
+            }
+
+            .work-row {
+                justify-content: center;
+            }
+
+            .work-col,
+            .work-col2 {
+                width: 30%;
+                margin-bottom: 50px;
+                margin-top: 50px;
+            }
+
+            .work-dots img {
+                margin-left: 50%;
+                transform: translateX(-50%);
+
+            }
+
+            .pulsedots {
+                top: -48px;
+                left: calc(50% - 8px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="work-process">
+        <div class="work-container">
+            <div class="work-con">
+                <h5 class="sub-title">WORK PROCESS</h5>
+                <h2 class="work-title">How To Work It!</h2>
+            </div>
+            <div class="work-row">
+                <div class="work-dots">
+                    <img src="image/dots.svg">
+                </div>
+                <div class="work-col">
+                    <div class="pulsedots">
+                        <!-- <i class='bx bx-circle'></i> -->
+                    </div>
+                    <div class="work-img">
+                        <img src="image/process.png">
+                    </div>
+                    <div class="work-head">
+                        <h3 class="box-title">Select a project</h3>
+                        <p class="process-card_text">Continua scale empowered metrics with cost effective
+                            innovation.</p>
+                    </div>
+                </div>
+                <div class="work-col2">
+                    <div class="pulsedots">
+                        <!-- <i class='bx bx-circle'></i> -->
+                    </div>
+                    <div class="work-img">
+                        <img src="image/process1.png">
+                    </div>
+                    <div class="work-head">
+                        <h3 class="box-title">Project analysis</h3>
+                        <p class="process-card_text">Continua scale empowered metrics with cost effective
+                            innovation.</p>
+                    </div>
+                </div>
+                <div class="work-col">
+                    <div class="pulsedots">
+                        <!-- <i class='bx bx-circle'></i> -->
+                    </div>
+                    <div class="work-img">
+                        <img src="image/process2.png">
+                    </div>
+                    <div class="work-head">
+                        <h3 class="box-title">Plan Execute</h3>
+                        <p class="process-card_text">Continua scale empowered metrics with cost effective
+                            innovation.
+                        </p>
+                    </div>
+                </div>
+                <div class="work-col2">
+                    <div class="pulsedots">
+                        <!-- <i class='bx bx-circle'></i> -->
+                    </div>
+                    <div class="work-img">
+                        <img src="image/process3.png">
+                    </div>
+                    <div class="work-head">
+                        <h3 class="box-title">Deliver result</h3>
+                        <p class="process-card_text">Continua scale empowered metrics with cost effective
+                            innovation.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
